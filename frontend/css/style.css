@@ -1,0 +1,58 @@
+:root {
+    --shadow-smallest: 0px 4px 8px rgba(0,0,0,0.12);
+    --shadow-small: 0 5px 10px rgba(0,0,0,0.12);
+    --shadow-medium: 0 8px 30px rgba(0,0,0,0.12);
+    --shadow-large: 0 30px 60px rgba(0,0,0,0.12);
+    --shadow-hover: 0 30px 60px rgba(0,0,0,0.12);
+    --shadow-sticky: 0 12px 10px -10px rgba(0,0,0,0.12);
+}
+* {
+    padding: 0;margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body > .container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+body > .container > main {
+    flex-grow: 1;
+}
+a {
+    color: rgb(0, 0, 238);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* temp inicio */
+#root {
+    flex-grow: 1;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* temp final */
+
+.card {
+    box-shadow: var(--shadow-medium);
+    padding: .85em;
+    height: 200px;
+    width: 200px;
+    transition: all 1s;
+    text-align: center;
+    display: inline-block;
+}
+.card:hover {
+    height: 300px;
+}
+.card h4 {
+    cursor: pointer;
+}
+.card h4:hover {
+    text-decoration: underline;
+}
